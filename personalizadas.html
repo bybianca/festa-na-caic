@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> caixas personalizadas</title>
+    </head>
+    <style>
+.myDiv {
+  border: 7px outset black;
+  background-color: lightgray;    
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+  background-color: lightgrey ;
+  margin-inline: 150px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: justify;
+} 
+    </style>
+    <body> 
+        <div class="myDiv">
+            <h1>caixas personalizadas: </h1>
+            <h1>monte a melhor caixa pra sua festa. </h1>
+          </div>
+          <h2> responda ao nosso questionario para montarmos o melhor kit para Você. </h2>
+          <hr>           
+     
+          <fieldset class="form-group">
+            <label for="chosenAnimal"> nome </label>
+            <input type="text" id="chosenAnimal" name="chosenAnimal" class="form-control">
+          </fieldset>
+              
+          <fieldset class="form-group">
+            <label for="adopterEmail">telefone/ WhatsApp</label>
+                <input type="email" id="adopterEmail" name="adopterEmail" class="form-control" >
+                <div class="error"></div>
+            </fieldset>
+                <fieldset class="form-group birthday_field">
+                    <label for="mainAdopterBirthday">data da festa </label>
+                    <input type="date" id="birthday" name="birthday">
+                    <div class="error"></div>
+                </fieldset>
+            </div>
+              <fieldset class="form-group">
+              <label for="adopterEmail">tema da festa</label>
+                  <input type="email" id="adopterEmail" name="adopterEmail" class="form-control" >
+                  
+              </fieldset>
+              <fieldset class="form-group">
+                <label for="typeOfResidence">1. qual o tamanho do bolo: </label>
+                <select class="form-control question" id="typeOfResidence" name="typeOfResidence">
+                    <option></option>
+                    <option>500g</option>
+                    <option> 1kg</option>
+                    <option> 2kg</option>
+                    <option> 3kg</option>
+                    <option> 4kg</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="typeOfResidence">2. quantidade de salgado : </label>
+                <select class="form-control question" id="typeOfResidence" name="typeOfResidence">
+                    <option></option>
+                    <option>50 unidades </option>
+                    <option> 100 unidades</option>
+                    <option> 200 unidades</option>
+                    <option> 300 unidades</option>
+                    <option> 400 unidades</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="animalsAllowed">3. você quer balao na caixa?</label>
+                <select class="form-control question" id="animalsAllowed" name="animalsAllowed">
+                    <option></option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
+            </fieldset>  
+            <fieldset class="form-group">
+                <label for="question12"> 4. adicione o link da imagem de como você quer o topo do bolo:  </label>
+                <textarea name="question12" id="question12" cols="30" rows="2" class="form-control question"></textarea>
+                <div class="error"></div>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="question12"> 5.quantas pessoas irao a sua festa:   </label>
+                <textarea name="question12" id="question12" cols="30" rows="2" class="form-control question"></textarea>
+                <div class="error"></div>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="typeOfResidence">6. quantidade de Doces: </label>
+                <select class="form-control question" id="typeOfResidence" name="typeOfResidence">
+                    <option></option>
+                    <option>50 unidades </option>
+                    <option> 100 unidades</option>
+                    <option> 200 unidades</option>
+                    <option> 300 unidades</option>
+                    <option> 400 unidades</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="typeOfResidence">7. quantidade de refrigerantes </label>
+                <select class="form-control question" id="typeOfResidence" name="typeOfResidence">
+                    <option></option>
+                    <option> nenhum  </option>
+                    <option> 1</option>
+                    <option>2</option>
+                    <option> 4</option>
+                    <option> 4</option>
+                </select>
+            </fieldset>
+            <h2> informaçoes para o envio: </h2>
+            <fieldset class="form-group">
+                <label for="adopterAddress">Endereço completo (rua, número, complemento)</label>
+                <input type="text" id="adopterAddress" name="adopterAddress" class="form-control" placeholder="Seu endereço completo">
+                <div class="error"></div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="adopterNeighborhood">Bairro</label>
+                <input type="text" id="adopterNeighborhood" name="adopterNeighborhood" class="form-control" placeholder="Seu bairro">
+                <div class="error"></div>
+            </fieldset>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <fieldset class="form-group">
+                        <label for="adopterCity">Cidade</label>
+                        <input type="text" id="adopterCity" name="adopterCity" class="form-control" placeholder="Sua cidade">
+                        <div class="error"></div>
+                    </fieldset>
+                </div>
+                <div class="col-md-3">
+                    <fieldset class="form-group">
+                        <label for="adopterState">UF</label>
+                        <input type="text" id="adopterState" name="adopterState" class="form-control" placeholder="UF" minlength="2" maxlength="2">
+                        <div class="error"></div>
+                    </fieldset>
+                </div>
+            </div>
+
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="adopterEmail">CEP </label>
+            <input type="email" id="adopterEmail" name="adopterEmail" class="form-control" >
+            
+        </fieldset>
+
+            <input type="submit" value="Submit">
+    </body>
+
+</html>
